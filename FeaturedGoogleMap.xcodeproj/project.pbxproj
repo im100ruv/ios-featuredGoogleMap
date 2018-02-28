@@ -11,15 +11,25 @@
 		C6F81CB02045D1700007F7D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F81CAF2045D1700007F7D2 /* ViewController.swift */; };
 		C6F81CB52045D1700007F7D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F81CB42045D1700007F7D2 /* Assets.xcassets */; };
 		C6F81CB82045D1700007F7D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F81CB62045D1700007F7D2 /* LaunchScreen.storyboard */; };
+		C6F81CC02045D94E0007F7D2 /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F81CBF2045D94E0007F7D2 /* CustomMarkerView.swift */; };
+		C6F81CC2204642220007F7D2 /* RestaurantPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F81CC1204642220007F7D2 /* RestaurantPreviewView.swift */; };
+		C6F81CC42046449D0007F7D2 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F81CC32046449D0007F7D2 /* DetailsVC.swift */; };
+		DA4FEBAEFB16E03E8EF0C3E1 /* Pods_FeaturedGoogleMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA54F0427ED7E2AA009CA03 /* Pods_FeaturedGoogleMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630DB9ABDB4FD33C02285390 /* Pods-FeaturedGoogleMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeaturedGoogleMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeaturedGoogleMap/Pods-FeaturedGoogleMap.debug.xcconfig"; sourceTree = "<group>"; };
+		B659E161A355168A29C28374 /* Pods-FeaturedGoogleMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeaturedGoogleMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeaturedGoogleMap/Pods-FeaturedGoogleMap.release.xcconfig"; sourceTree = "<group>"; };
 		C6F81CAA2045D1700007F7D2 /* FeaturedGoogleMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeaturedGoogleMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F81CAD2045D1700007F7D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6F81CAF2045D1700007F7D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6F81CB42045D1700007F7D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F81CB72045D1700007F7D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F81CB92045D1700007F7D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6F81CBF2045D94E0007F7D2 /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		C6F81CC1204642220007F7D2 /* RestaurantPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPreviewView.swift; sourceTree = "<group>"; };
+		C6F81CC32046449D0007F7D2 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		CEA54F0427ED7E2AA009CA03 /* Pods_FeaturedGoogleMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeaturedGoogleMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4FEBAEFB16E03E8EF0C3E1 /* Pods_FeaturedGoogleMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD4B8007BA6743D0F982C579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA54F0427ED7E2AA009CA03 /* Pods_FeaturedGoogleMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6F81CA12045D1700007F7D2 = {
 			isa = PBXGroup;
 			children = (
 				C6F81CAC2045D1700007F7D2 /* FeaturedGoogleMap */,
 				C6F81CAB2045D1700007F7D2 /* Products */,
+				E5ED246A56835CC55666EF9D /* Pods */,
+				BD4B8007BA6743D0F982C579 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +75,23 @@
 			children = (
 				C6F81CAD2045D1700007F7D2 /* AppDelegate.swift */,
 				C6F81CAF2045D1700007F7D2 /* ViewController.swift */,
+				C6F81CC1204642220007F7D2 /* RestaurantPreviewView.swift */,
+				C6F81CC32046449D0007F7D2 /* DetailsVC.swift */,
+				C6F81CBF2045D94E0007F7D2 /* CustomMarkerView.swift */,
 				C6F81CB42045D1700007F7D2 /* Assets.xcassets */,
 				C6F81CB62045D1700007F7D2 /* LaunchScreen.storyboard */,
 				C6F81CB92045D1700007F7D2 /* Info.plist */,
 			);
 			path = FeaturedGoogleMap;
+			sourceTree = "<group>";
+		};
+		E5ED246A56835CC55666EF9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				630DB9ABDB4FD33C02285390 /* Pods-FeaturedGoogleMap.debug.xcconfig */,
+				B659E161A355168A29C28374 /* Pods-FeaturedGoogleMap.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6F81CBC2045D1700007F7D2 /* Build configuration list for PBXNativeTarget "FeaturedGoogleMap" */;
 			buildPhases = (
+				4454C9CC76B593A7F66E6FAF /* [CP] Check Pods Manifest.lock */,
 				C6F81CA62045D1700007F7D2 /* Sources */,
 				C6F81CA72045D1700007F7D2 /* Frameworks */,
 				C6F81CA82045D1700007F7D2 /* Resources */,
+				40610B3240A4B83EA7E226CF /* [CP] Embed Pods Frameworks */,
+				AD5A400580DC2B33B6E1A9BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,13 +163,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40610B3240A4B83EA7E226CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeaturedGoogleMap/Pods-FeaturedGoogleMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4454C9CC76B593A7F66E6FAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeaturedGoogleMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5A400580DC2B33B6E1A9BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FeaturedGoogleMap/Pods-FeaturedGoogleMap-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeaturedGoogleMap/Pods-FeaturedGoogleMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6F81CA62045D1700007F7D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F81CC2204642220007F7D2 /* RestaurantPreviewView.swift in Sources */,
 				C6F81CB02045D1700007F7D2 /* ViewController.swift in Sources */,
 				C6F81CAE2045D1700007F7D2 /* AppDelegate.swift in Sources */,
+				C6F81CC02045D94E0007F7D2 /* CustomMarkerView.swift in Sources */,
+				C6F81CC42046449D0007F7D2 /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +357,11 @@
 		};
 		C6F81CBD2045D1700007F7D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630DB9ABDB4FD33C02285390 /* Pods-FeaturedGoogleMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC6ND5VTK9;
 				INFOPLIST_FILE = FeaturedGoogleMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.im100ruv.FeaturedGoogleMap;
@@ -274,9 +373,11 @@
 		};
 		C6F81CBE2045D1700007F7D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B659E161A355168A29C28374 /* Pods-FeaturedGoogleMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC6ND5VTK9;
 				INFOPLIST_FILE = FeaturedGoogleMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.im100ruv.FeaturedGoogleMap;
